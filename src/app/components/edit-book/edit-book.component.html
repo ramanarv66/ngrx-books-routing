@@ -1,0 +1,22 @@
+<h3> Edit book detail</h3>
+<form [formGroup]="bookForm">
+
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" name="" id="" class="form-control" placeholder="id" formControlName="id" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" name="" id="" class="form-control" placeholder="bookName" formControlName="bookName" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Author</label>
+        <input type="text" name="" id="" class="form-control" placeholder="author" formControlName="author" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Pages</label>
+        <input type="text" name="" id="" class="form-control" placeholder="pages" formControlName="pages" />
+    </div>
+
+    <button class="btn btn-danger" (click)="update()">Update</button>
+</form>

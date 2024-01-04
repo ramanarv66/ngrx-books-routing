@@ -1,0 +1,11 @@
+.table-responsive{
+    margin: 20px;
+    width: 600px;
+    border:1px solid lightgray;
+    border-radius: 20px;
+    height: 100%;
+}
+.flex-box{
+    display: flex;
+    gap: 10px;
+}

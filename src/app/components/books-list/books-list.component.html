@@ -1,0 +1,34 @@
+<h3>Books data</h3>
+
+<div class="flex-box">
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-borderless table-primary align-middle">
+            <thead class="table-light">
+
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th colspan="4">Edit/Delete</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr class="table-primary" *ngFor="let item of allBooks">
+                    <td scope="row">{{item.id}}</td>
+                    <td>{{item.bookName}}</td>
+                    <td>{{item.author}}</td>
+                    <td>{{item.pages}}</td>
+                    <td><button class="btn btn-primary" (click)="edit(item.id)">Edit</button></td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+    <div>
+
+        <router-outlet></router-outlet>
+    </div>
+</div>
